@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loglate", "loglate\loglate.csproj", "{2D3FEB36-3C4F-4067-BF5B-4838B714BA97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loglate.tests", "loglate.tests\loglate.tests.csproj", "{C5DBFD05-D9B6-4C70-B4DA-8C51FE71F17D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D3FEB36-3C4F-4067-BF5B-4838B714BA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D3FEB36-3C4F-4067-BF5B-4838B714BA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D3FEB36-3C4F-4067-BF5B-4838B714BA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D3FEB36-3C4F-4067-BF5B-4838B714BA97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DBFD05-D9B6-4C70-B4DA-8C51FE71F17D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DBFD05-D9B6-4C70-B4DA-8C51FE71F17D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DBFD05-D9B6-4C70-B4DA-8C51FE71F17D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DBFD05-D9B6-4C70-B4DA-8C51FE71F17D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
