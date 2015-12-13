@@ -49,6 +49,7 @@
     <Compile Include="Enums\LogLevel.cs" />
     <Compile Include="Factories\LoggingManagerFactory.cs" />
     <Compile Include="Factories\LoggingStrategyFactory.cs" />
+    <Compile Include="IDelayedLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategies\WarnLoggingStrategy.cs" />
     <Compile Include="Strategies\InfoLoggingStrategy.cs" />

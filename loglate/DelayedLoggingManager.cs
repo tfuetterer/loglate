@@ -12,7 +12,7 @@ using loglate.Enums;
 
 namespace loglate
 {
-    public class DelayedLoggingManager : ILog
+    public class DelayedLoggingManager : IDelayedLogger
     {
         #region Fields
         private ILog _logger;
