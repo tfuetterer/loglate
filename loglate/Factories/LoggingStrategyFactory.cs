@@ -18,32 +18,15 @@ namespace loglate.Factories
                 throw new ArgumentException("Logger can not be null");
             }
 
-            if (logLevel == LogLevel.Debug)
+            switch(logLevel)
             {
-                return new DebugLoggingStrategy(logger);
+                case LogLevel.Debug: return new DebugLoggingStrategy(logger);
+                case LogLevel.Error: return new ErrorLoggingStrategy(logger);
+                case LogLevel.Fatal: return new FatalLoggingStrategy(logger);
+                case LogLevel.Info: return new InfoLoggingStrategy(logger);
+                case LogLevel.Warn: return new WarnLoggingStrategy(logger);
+                default: throw new ArgumentException("Invalid loglevel");
             }
-
-            if (logLevel == LogLevel.Error)
-            {
-                return new ErrorLoggingStrategy(logger);
-            }
-
-            if (logLevel == LogLevel.Fatal)
-            {
-                return new FatalLoggingStrategy(logger);
-            }
-
-            if (logLevel == LogLevel.Info)
-            {
-                return new InfoLoggingStrategy(logger);
-            }
-
-            if (logLevel == LogLevel.Warn)
-            {
-                return new WarnLoggingStrategy(logger);
-            }
-
-            throw new ArgumentException("Invalid loglevel");
         }
     }
 }

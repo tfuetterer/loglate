@@ -13,6 +13,13 @@ namespace loglate.Factories.tests
     [TestClass()]
     public class LoggingManagerFactoryTests
     {
+        [ExpectedException(typeof(ArgumentException))]
+        [TestMethod()]
+        public void GetLoggingManagerWithoutLoggerTest()
+        {
+            ILog loggingManager = LoggingManagerFactory.GetLoggingManager(null);
+        }
+
         [TestMethod()]
         public void GetLoggingManagerTest()
         {

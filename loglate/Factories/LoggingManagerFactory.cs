@@ -11,6 +11,8 @@ namespace loglate.Factories
     {
         public static ILog GetLoggingManager(ILog logger)
         {
+            if (logger == null)
+                throw new ArgumentException("Cant create LoggingManager without logger.");
             return new DelayedLoggingManager(logger);
         }
     }

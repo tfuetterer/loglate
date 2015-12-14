@@ -17,7 +17,7 @@ namespace loglate.Factories.tests
     {
         [TestMethod()]
         [ExpectedException(typeof(ArgumentException))]
-        public void GetStrategyNoLogLevelTest()
+        public void GetStrategyNoLoggerTest()
         {
             var mock = new Mock<ILog>();
             ILog logger = mock.Object;
